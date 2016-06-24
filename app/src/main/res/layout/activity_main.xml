@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.will.spacecatz.MainActivity">
+
+    <ImageView
+        android:src="@drawable/cat"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:text="Space Catz"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignParentRight="true"
+        android:paddingTop="15dp"
+        android:paddingRight="20dp"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Send your cat to space today!"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_below="@id/title"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Phone: (123)456-7890"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignParentRight="true"
+        android:layout_above="@id/address"
+        android:paddingRight="20dp"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:text="Address : 1234 Space lane, Orange CA 92867"
+        android:textColor="@android:color/holo_green_dark"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        />
+</RelativeLayout>
